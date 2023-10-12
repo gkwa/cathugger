@@ -2,20 +2,21 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"log/slog"
 
+	"github.com/taylormonacelli/cathugger"
 	"github.com/taylormonacelli/goldbug"
 )
 
 var (
-	verbose, noExpunge bool
-	logFormat          string
+	verbose   bool
+	logFormat string
 )
 
 func main() {
 	flag.BoolVar(&verbose, "verbose", false, "Enable verbose output")
 	flag.BoolVar(&verbose, "v", false, "Enable verbose output (shorthand)")
-	flag.BoolVar(&noExpunge, "no-expunge", false, "Don't expunge data from pushbullet")
 	flag.StringVar(&logFormat, "log-format", "", "Log format (text or json)")
 
 	flag.Parse()
@@ -26,5 +27,21 @@ func main() {
 		} else {
 			goldbug.SetDefaultLoggerText(slog.LevelDebug)
 		}
+	}
+
+	args := flag.Args()
+	if len(args) != 2 {
+		fmt.Printf("Usage: %s <service> <region>\n", "cathugger")
+		return
+	}
+	service := args[0]
+	region := args[1]
+
+	slog.Debug("args", "service", service)
+	slog.Debug("args", "region", region)
+
+	url := cathugger.GetAWSConsoleUrl(region, service)
+	if url != "" {
+		cathugger.RunCmdOpenUrl(url)
 	}
 }
