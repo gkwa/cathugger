@@ -1,11 +1,15 @@
-* My Project
+Example:
+#+begin_example
+cathugger ec2 ap-southeast-1
+#+end_example
 
-This is a description of my project.
+opens this url in your default browser:
+https://ap-southeast-1.console.aws.amazon.com/ec2/home?region=ap-southeast-1#Instances:
 
-** Installation
+Example:
+#+begin_example
+cathugger lambda us-west-2
+#+end_example
 
-To install my project, run this command: go install myproject
-
-** Usage
-
-To use my project, run this command: myproject
+opens this url in your default browser:
+https://us-west-2.console.aws.amazon.com/lambda/home?region=us-west-2#/functions
