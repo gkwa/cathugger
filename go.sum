@@ -43,6 +43,8 @@ github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5Cc
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
 github.com/taylormonacelli/bluecare v0.0.5 h1:jpta0iUaQ4UrFL725SZYOg3sjrgX2kjTKZt/QS1KjyQ=
 github.com/taylormonacelli/bluecare v0.0.5/go.mod h1:MuXuGKUcllxbUWxFUqPHuFXkppvfET7IAuRD8DZS9q4=
+github.com/taylormonacelli/bluecare v0.0.6 h1:vprQxhXQtDQ9XFd2x+nI597Vn/9igtJ660XK7ArvQR8=
+github.com/taylormonacelli/bluecare v0.0.6/go.mod h1:p3zKniKg3+a05qs44CQBWOKK8cPsQhbUp9OEYEA4+xU=
 github.com/taylormonacelli/eachgoose v0.0.1 h1:XyG3Ze7AgKnlpgwyHmomGaBPHUxy2wzRW7iLdwnCQL0=
 github.com/taylormonacelli/eachgoose v0.0.1/go.mod h1:P5QdYR/zXUvflPw1IJ1OajXeHePuiqUhB1QLJC9OXlE=
 github.com/taylormonacelli/forestfish v0.0.2 h1:/JheT+WsmBFT3RN0JQu6MGfS6uPlnY/OReSwtXSu2OE=
