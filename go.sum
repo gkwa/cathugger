@@ -45,6 +45,8 @@ github.com/taylormonacelli/bluecare v0.0.1 h1:K5owJnA+v2jXEG1zlFoqx9H9ovoD5Nhlid
 github.com/taylormonacelli/bluecare v0.0.1/go.mod h1:4KA6OniPlGnmwV7JDzIONiCWY/oeR5iJzaTSqHfbK68=
 github.com/taylormonacelli/bluecare v0.0.2 h1:ImBIxNTiW9ewggNDTpyGV1q+OSm3OiXM8f5U6HITMtM=
 github.com/taylormonacelli/bluecare v0.0.2/go.mod h1:4KA6OniPlGnmwV7JDzIONiCWY/oeR5iJzaTSqHfbK68=
+github.com/taylormonacelli/bluecare v0.0.3 h1:9rYCaHLI8EmqaownU8rP/2jzt5kkmOa5G5N9XrBIQeY=
+github.com/taylormonacelli/bluecare v0.0.3/go.mod h1:MuXuGKUcllxbUWxFUqPHuFXkppvfET7IAuRD8DZS9q4=
 github.com/taylormonacelli/eachgoose v0.0.0-20231013232208-65851c02fefe h1:ezRfpYIhgXm53/jIvy3xDEsD7WTeAgbMM76wREJw4DM=
 github.com/taylormonacelli/eachgoose v0.0.0-20231013232208-65851c02fefe/go.mod h1:P5QdYR/zXUvflPw1IJ1OajXeHePuiqUhB1QLJC9OXlE=
 github.com/taylormonacelli/eachgoose v0.0.1 h1:XyG3Ze7AgKnlpgwyHmomGaBPHUxy2wzRW7iLdwnCQL0=
