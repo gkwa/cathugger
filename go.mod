@@ -3,6 +3,8 @@ module github.com/taylormonacelli/cathugger
 go 1.21.1
 
 require (
+	github.com/taylormonacelli/bluecare v0.0.1
+	github.com/taylormonacelli/eachgoose v0.0.0-20231013232208-65851c02fefe
 	github.com/taylormonacelli/goldbug v0.0.5
 	github.com/taylormonacelli/lemondrop v0.0.11
 )
@@ -28,3 +30,7 @@ require (
 	github.com/taylormonacelli/somespider v0.0.0-20231012013812-aa3606dd52d2 // indirect
 	golang.org/x/sys v0.13.0 // indirect
 )
+
+replace github.com/taylormonacelli/bluecare => ../bluecare
+
+replace github.com/taylormonacelli/eachgoose => ../eachgoose

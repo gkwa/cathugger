@@ -4,61 +4,63 @@ import (
 	"fmt"
 	"log/slog"
 	"os/exec"
+	"strings"
 
+	"github.com/taylormonacelli/bluecare"
+	"github.com/taylormonacelli/eachgoose"
 	"github.com/taylormonacelli/lemondrop"
 )
 
-func GetAWSConsoleUrl(region, service string) string {
+func Execute(resources []eachgoose.Resource) {
+	var urls []string
+
+	for _, res := range resources {
+		slog.Debug("args", "service", res.Service, "region", res.Regions)
+		for _, region := range res.Regions {
+			url, err := bluecare.GetServiceURLInRegion(res.Service, region)
+			if err != nil {
+				slog.Error("get url fail", "region", region, "service", res.Service, "error", err.Error())
+			}
+			urls = append(urls, url)
+		}
+	}
+
+	for _, url := range urls {
+		slog.Debug("will open url", "url", url)
+		RunCmdOpenUrl(url)
+	}
+}
+
+func isRegionValid(region string) bool {
 	regions, err := lemondrop.GetRegionDetails()
 	if err != nil {
 		slog.Error("fetch regions", "error", err.Error())
 	}
 
-	isValidRegion := false
-	for _, r := range regions {
-		if r.RegionCode == region {
-			slog.Debug("arg check", "found", true, "region", region)
-			isValidRegion = true
-			slog.Info("region", "region", r.RegionDesc)
-			break
-		}
-	}
+	_, found := regions[region]
+	return found
+}
 
-	if !isValidRegion {
+func GetAWSConsoleUrl(region, service string) string {
+	if !isRegionValid(region) {
 		slog.Error("region arg bad", "region", region)
 		return ""
 	}
 
-	services := []string{"ec2", "s3", "lambda"}
-
-	isValidService := false
-	for _, s := range services {
-		if service == s {
-			slog.Debug("arg check", "found", true, "service", service)
-			isValidService = true
-			break
-		}
-	}
-
-	if !isValidService {
-		slog.Error("service arg bad", "service", service)
+	serviceMap, err := bluecare.GetServiceURLMap()
+	if err != nil {
+		slog.Error("matching service", "error", err.Error())
 		return ""
 	}
 
-	url := ""
-	if service == "ec2" {
-		url = fmt.Sprintf("https://%s.console.aws.amazon.com/ec2/home?region=%s#Instances:", region, region)
+	url, ok := serviceMap[service]
+	if !ok {
+		return ""
 	}
 
-	if service == "lambda" {
-		url = fmt.Sprintf("https://%s.console.aws.amazon.com/lambda/home?region=%s#/functions", region, region)
-	}
+	url = strings.Replace(url, "us-west-1", region, -1)
 
-	if service == "s3" {
-		url = fmt.Sprintf("https://s3.console.aws.amazon.com/s3/buckets?region=%s", region)
-	}
-
-	slog.Debug("region", "url", url)
+	slog.Debug("url", "url", url)
 	return url
 }
 

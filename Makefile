@@ -9,7 +9,7 @@ $(BIN): $(GO_FILES) $(GO_DEPS)
 	go build -o $(BIN) cmd/main.go
 
 test: $(BIN)
-	./$(BIN)
+	./$(BIN) ec2:us-west-1,us-east-2,ap-northeast-1 lambda:ap-northeast-1
 .PHONY: test
 
 pretty: $(GO_FILES)
