@@ -20,6 +20,7 @@ func Execute(resources []eachgoose.Resource) {
 			url, err := bluecare.GetServiceURLInRegion(res.Service, region)
 			if err != nil {
 				slog.Error("get url fail", "region", region, "service", res.Service, "error", err.Error())
+				return
 			}
 			urls = append(urls, url)
 		}

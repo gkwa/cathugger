@@ -41,14 +41,8 @@ github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZN
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5CcY=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
-github.com/taylormonacelli/bluecare v0.0.1 h1:K5owJnA+v2jXEG1zlFoqx9H9ovoD5NhlidzMigwhLvg=
-github.com/taylormonacelli/bluecare v0.0.1/go.mod h1:4KA6OniPlGnmwV7JDzIONiCWY/oeR5iJzaTSqHfbK68=
-github.com/taylormonacelli/bluecare v0.0.2 h1:ImBIxNTiW9ewggNDTpyGV1q+OSm3OiXM8f5U6HITMtM=
-github.com/taylormonacelli/bluecare v0.0.2/go.mod h1:4KA6OniPlGnmwV7JDzIONiCWY/oeR5iJzaTSqHfbK68=
-github.com/taylormonacelli/bluecare v0.0.3 h1:9rYCaHLI8EmqaownU8rP/2jzt5kkmOa5G5N9XrBIQeY=
-github.com/taylormonacelli/bluecare v0.0.3/go.mod h1:MuXuGKUcllxbUWxFUqPHuFXkppvfET7IAuRD8DZS9q4=
-github.com/taylormonacelli/eachgoose v0.0.0-20231013232208-65851c02fefe h1:ezRfpYIhgXm53/jIvy3xDEsD7WTeAgbMM76wREJw4DM=
-github.com/taylormonacelli/eachgoose v0.0.0-20231013232208-65851c02fefe/go.mod h1:P5QdYR/zXUvflPw1IJ1OajXeHePuiqUhB1QLJC9OXlE=
+github.com/taylormonacelli/bluecare v0.0.5 h1:jpta0iUaQ4UrFL725SZYOg3sjrgX2kjTKZt/QS1KjyQ=
+github.com/taylormonacelli/bluecare v0.0.5/go.mod h1:MuXuGKUcllxbUWxFUqPHuFXkppvfET7IAuRD8DZS9q4=
 github.com/taylormonacelli/eachgoose v0.0.1 h1:XyG3Ze7AgKnlpgwyHmomGaBPHUxy2wzRW7iLdwnCQL0=
 github.com/taylormonacelli/eachgoose v0.0.1/go.mod h1:P5QdYR/zXUvflPw1IJ1OajXeHePuiqUhB1QLJC9OXlE=
 github.com/taylormonacelli/forestfish v0.0.2 h1:/JheT+WsmBFT3RN0JQu6MGfS6uPlnY/OReSwtXSu2OE=
