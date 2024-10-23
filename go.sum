@@ -49,6 +49,8 @@ github.com/taylormonacelli/bluecare v0.0.8 h1:6lySSIPxqjY8e4IAB8sjU2lqnmSzvCq6yT
 github.com/taylormonacelli/bluecare v0.0.8/go.mod h1:p3zKniKg3+a05qs44CQBWOKK8cPsQhbUp9OEYEA4+xU=
 github.com/taylormonacelli/eachgoose v0.0.1 h1:XyG3Ze7AgKnlpgwyHmomGaBPHUxy2wzRW7iLdwnCQL0=
 github.com/taylormonacelli/eachgoose v0.0.1/go.mod h1:P5QdYR/zXUvflPw1IJ1OajXeHePuiqUhB1QLJC9OXlE=
+github.com/taylormonacelli/eachgoose v0.0.3 h1:YWP3zhz/RwituO5FS7WSAopLOfCrBkD6L2D66h4EgL4=
+github.com/taylormonacelli/eachgoose v0.0.3/go.mod h1:P5QdYR/zXUvflPw1IJ1OajXeHePuiqUhB1QLJC9OXlE=
 github.com/taylormonacelli/forestfish v0.0.2 h1:/JheT+WsmBFT3RN0JQu6MGfS6uPlnY/OReSwtXSu2OE=
 github.com/taylormonacelli/forestfish v0.0.2/go.mod h1:/r1GlaTaaRRtK+SzKz7pjRKmhl/9h1aiRNr2yJOoVm8=
 github.com/taylormonacelli/goldbug v0.0.5 h1:7PplDdbe1ra+2XbLIS4kReVXmf0kSyOQoM1xicSH4H0=
