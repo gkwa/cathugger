@@ -5,7 +5,7 @@ go 1.21.1
 require (
 	github.com/taylormonacelli/bluecare v0.0.8
 	github.com/taylormonacelli/eachgoose v0.0.3
-	github.com/taylormonacelli/goldbug v0.0.5
+	github.com/taylormonacelli/goldbug v0.0.6
 	github.com/taylormonacelli/lemondrop v0.0.11
 )
 
